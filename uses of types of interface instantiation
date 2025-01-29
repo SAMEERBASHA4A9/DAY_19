@@ -1,0 +1,12 @@
+In ORDER BASED Instantiation 
+In the TB we connected interface with different signals
+for a we connected c, for b we connected b, and for c we connected a
+so if you calculated the output according to rtl 
+d=a+b, but we got b+c because we connected c for a and b for b 
+so we got 10 insted of 1100(a+b)
+
+In NAME BASED Instantiation 
+we got the correct ouputs because in name based instantiation we connected each and every signal by its name
+so there is no chance of signal missmatching,
+
+Generally coders prefer name based instantiation in order to reduce the confusion 
