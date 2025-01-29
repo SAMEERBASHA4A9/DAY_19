@@ -1,7 +1,7 @@
 module interface_tb(input [3:0]d,e,f,output reg [3:0] a,b,c);
 
-interface_rtl DUT(.b(b),.a(a),.c(c),.d(d),.f(f),.e(e));
-//interface_rtl DUT (c,b,a,d,e,f);
+ //interface_rtl DUT(.b(b),.a(a),.c(c),.d(d),.f(f),.e(e)); name based instantiation
+ interface_rtl DUT (c,b,a,d,e,f);//order based instantiation
 
 initial
 begin
